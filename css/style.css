@@ -1,0 +1,929 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-size: 1em;
+    background: #f2f5f9;
+    color: #000839;
+    overflow-x: hidden; }
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+body.offcanvas-menu:before {
+    opacity: 1;
+    visibility: visible; }
+
+a {
+    color: #ff6363;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+a:hover {
+    color: #ff6363;
+    text-decoration: none; }
+
+.text-primary {
+    color: #ff6363 !important; }
+
+a.text-primary {
+    color: #ff6363 !important; }
+a.text-primary:hover {
+    color: #ff6363 !important; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    font-family: "Montserrat", sans-serif; }
+
+body {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-purple-moon {
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-ultra-voilet {
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-pink-moon {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-cool-blues {
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-dark-blue {
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-green-moon {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-orange-moon {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-dark-moon {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-light-moon {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+    border: 3px solid #eee;
+}
+
+.btn-funky-moon {
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(145deg, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(145deg, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-rounded {
+    border-radius: 35px;
+}
+
+.btn-fab {
+    height: 50px;
+    width: 53px;
+    border-radius: 50%;
+}
+
+hr {
+    border-top: 1px solid #9E9E9E;
+}
+
+/**navbar
+ */
+
+.navbar .container {
+    border-radius: 40px;
+    min-height: 60px;
+}
+.fixed-top{
+    top: 1rem !important;
+}
+
+/*section1*/
+
+.features-v3 {
+    background: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 991.98px) {
+    .features-v3 h2 {
+        font-size: 1.8rem; } }
+.features-v3 .feature-v3-item {
+    margin-bottom: 0px;
+    padding: 30px 30px 50px 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    top: 0; }
+.features-v3 .feature-v3-item img {
+    margin-bottom: 30px;
+    max-width: 200px;
+    margin: 0 auto 30px auto; }
+.features-v3 .feature-v3-item h3 {
+    font-size: 16px;
+    font-weight: 700; }
+.features-v3 .feature-v3-item .more {
+    position: absolute;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+.features-v3 .feature-v3-item:hover, .features-v3 .feature-v3-item.active {
+    background: #ffffff;
+    top: -10px;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05); }
+.features-v3 .feature-v3-item:hover .more, .features-v3 .feature-v3-item.active .more {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible; }
+
+
+
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+    .navbar .nav-item:hover .nav-link{ color: #fff;  }
+    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .navbar .dropdown-menu.fade-up{ top:180%;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+/* ============ desktop view .end// ============ */
+/**************** banner part css start ****************/
+/* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part {
+    height: 880px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: 41%;
+    background-position: top right;
+}
+
+@media (max-width: 576px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part {
+        height: 650px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part {
+        height: 650px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part {
+        height: 700px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part {
+        background-size: 45% 75%;
+        height: 650px;
+    }
+}
+
+/* line 30, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text {
+    display: table;
+    width: 100%;
+    height: 880px;
+}
+
+/* line 34, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text .banner_text_iner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+    /* line 30, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text {
+        text-align: center;
+        padding-top: 0px;
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 30, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text {
+        text-align: center;
+        padding-top: 0px;
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 30, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text {
+        text-align: center;
+        padding-top: 0px;
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 30, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text {
+        height: 650px;
+    }
+}
+
+/* line 57, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #666666;
+}
+
+/* line 64, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text h1 {
+    font-size: 55px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #000;
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #222222;
+    line-height: 1.273;
+}
+
+@media (max-width: 576px) {
+    /* line 64, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 64, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 64, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 64, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+}
+
+/* line 95, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text h1 span {
+    color: #ff7e5f;
+}
+
+/* line 100, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text p {
+    font-size: 14px;
+    line-height: 1.929;
+    font-family: "Montserrat", sans-serif;
+    color: #646464;
+}
+
+/* line 106, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .banner_text .btn_1 {
+    box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+    margin-top: 45px;
+}
+
+/* line 113, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .video_popup {
+    z-index: 99 !important;
+    color: #333848;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* line 120, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+.banner_part .video_popup span {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(1, 84, 85, 0.2);
+    color: #fe9c6f;
+    margin-left: 37px;
+    margin-right: 18px;
+    padding-left: 5px;
+}
+
+@media (max-width: 576px) {
+    /* line 120, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .video_popup span {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* line 113, E:/167 Bizcon Business/Bizcon_html/sass/_banner.scss */
+    .banner_part .video_popup {
+        margin-left: 0px;
+    }
+}
+
+.hero-app-1 {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+}
+
+@media (max-width: 576px) {
+    /* line 420, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 420, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-1 {
+        padding: 8px 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 420, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-1 {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 420, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-1 {
+        padding: 10px 25px;
+    }
+}
+
+/* line 438, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-2 {
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+}
+
+@media (max-width: 576px) {
+    /* line 438, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-2 {
+        bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 438, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-2 {
+        bottom: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 438, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-2 {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 438, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-2 {
+        padding: 10px 25px;
+    }
+}
+
+/* line 456, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-3 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+@media (max-width: 576px) {
+    /* line 456, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-3 {
+        left: 5%;
+    }
+}
+
+/* line 474, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-4 {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+}
+
+/* line 480, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-5 {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+}
+
+/* line 486, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-6 {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+/* line 492, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-7 {
+    position: absolute;
+    top: 13%;
+    left: 51%;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 492, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-7 {
+        top: 5%;
+        left: 73%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 492, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-7 {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 492, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-7 {
+        padding: 10px 25px;
+    }
+}
+
+/* line 511, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.hero-app-8 {
+    position: absolute;
+    left: 68%;
+    top: 60%;
+}
+
+@media (max-width: 576px) {
+    /* line 511, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+    .hero-app-8 {
+        top: 80%;
+    }
+}
+
+
+.custom-animation {
+    backface-visibility: hidden;
+    animation: jumping 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all .9s ease 5s;
+    user-select: none;
+}
+
+/* line 256, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation2 {
+    backface-visibility: hidden;
+    animation: jumping2 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 1s ease 3s;
+    user-select: none;
+}
+
+/* line 264, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation3 {
+    backface-visibility: hidden;
+    animation: jumping3 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+}
+
+/* line 272, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation4 {
+    backface-visibility: hidden;
+    animation: jumping4 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+/* line 280, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation10 {
+    backface-visibility: hidden;
+    animation: jumping10 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+/* line 288, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation11 {
+    backface-visibility: hidden;
+    animation: jumping11 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+/* line 248, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation {
+    backface-visibility: hidden;
+    animation: jumping 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all .9s ease 5s;
+    user-select: none;
+}
+
+/* line 256, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation2 {
+    backface-visibility: hidden;
+    animation: jumping2 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 1s ease 3s;
+    user-select: none;
+}
+
+/* line 264, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation3 {
+    backface-visibility: hidden;
+    animation: jumping3 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+}
+
+/* line 272, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation4 {
+    backface-visibility: hidden;
+    animation: jumping4 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+/* line 280, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation10 {
+    backface-visibility: hidden;
+    animation: jumping10 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+/* line 288, E:/167 Bizcon Business/Bizcon_html/sass/_common.scss */
+.custom-animation11 {
+    backface-visibility: hidden;
+    animation: jumping11 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 8s ease 4s;
+    user-select: none;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0px) translateX(0) rotate(0) scale(1);
+        opacity: .8;
+    }
+    25% {
+        transform: translateY(-10px) translateX(-10px) rotate(20deg) scale(0.8);
+        opacity: .9;
+    }
+    50% {
+        transform: translateY(-15px) translateX(-15px) rotate(10deg) scale(0.9);
+        opacity: .8;
+    }
+    75% {
+        transform: translateY(-20px) translateX(-20px) rotate(20deg) scale(0.75);
+        opacity: .6;
+    }
+    85% {
+        transform: translateY(-25px) translateX(-25px) rotate(20deg) scale(0.9);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(-15px) translateX(-15px) rotate(0) scale(0.95);
+        opacity: .85;
+    }
+}
+
+@keyframes jumping2 {
+    0% {
+        transform: translateY(0px) translateX(0) rotate(0) scale(1);
+        opacity: .5;
+    }
+    25% {
+        transform: translateY(-30px) translateX(10px) rotate(20deg) scale(0.8);
+        opacity: .8;
+    }
+    50% {
+        transform: translateY(15px) translateX(-15px) rotate(10deg) scale(0.7);
+        opacity: .8;
+    }
+    75% {
+        transform: translateY(30px) translateX(20px) rotate(20deg) scale(0.75);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(-15px) translateX(15px) rotate(0) scale(0.75);
+        opacity: .9;
+    }
+}
+
+@keyframes jumping3 {
+    0% {
+        transform: translateY(10px) translateX(0) rotate(0) scale(1);
+        opacity: .9;
+    }
+    20% {
+        transform: translateY(20px) translateX(10px) rotate(-20deg) scale(0.8);
+        opacity: .8;
+    }
+    40% {
+        transform: translateY(15px) translateX(-15px) rotate(10deg) scale(0.75);
+        opacity: .8;
+    }
+    40% {
+        transform: translateY(-15px) translateX(-25px) rotate(10deg) scale(0.5);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-30px) translateX(20px) rotate(-20deg) scale(0.75);
+        opacity: .6;
+    }
+    100% {
+        transform: translateY(15px) translateX(15px) rotate(0) scale(0.95);
+        opacity: .7;
+    }
+}
+
+@keyframes jumping4 {
+    0% {
+        transform: translateY(-30px) translateX(20px) rotate(0) scale(1.2);
+        opacity: .7;
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px) rotate(50deg) scale(0.6);
+        opacity: .8;
+    }
+    50% {
+        transform: translateY(15px) translateX(-15px) rotate(20deg) scale(0.5);
+        opacity: .9;
+    }
+    75% {
+        transform: translateY(30px) translateX(20px) rotate(50deg) scale(0.75);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(-15px) translateX(15px) rotate(0) scale(0.5);
+        opacity: .9;
+    }
+}
+
+@keyframes jumping10 {
+    0% {
+        transform: rotate(180deg);
+        display: block;
+    }
+    100% {
+        transform: rotate(30deg);
+        display: block;
+    }
+}
+
+@keyframes jumping11 {
+    0% {
+        transform: rotate(180deg) translate(-20px, 20px);
+        display: block;
+    }
+    100% {
+        transform: rotate(30deg) translate(0px, 0px);
+        display: block;
+    }
+}
+
+
+.btn_1 {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    margin-top: 45px;
+    background-size: 300% 100%;
+}
+
+/* line 52, E:/167 Bizcon Business/Bizcon_html/sass/_button.scss */
+.btn_1:hover {
+    color: #fff !important;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 576px) {
+    /* line 39, E:/167 Bizcon Business/Bizcon_html/sass/_button.scss */
+    .btn_1 {
+        padding: 14px 30px;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 39, E:/167 Bizcon Business/Bizcon_html/sass/_button.scss */
+    .btn_1 {
+        padding: 14px 30px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 39, E:/167 Bizcon Business/Bizcon_html/sass/_button.scss */
+    .btn_1 {
+        padding: 14px 30px;
+        margin-top: 30px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:300,400,500,600,700,800|Roboto:300,400,500|Martel:700,800");
+/* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_extends.scss */
+.btn_1, .banner_part .banner_text .btn_1 {
+    background-image: -webkit-linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
+    background-image: -o-linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
+    background-image: linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
+}
+
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(121, 89, 135, 1) 0%, rgba(178, 187, 193, 1) 100%);
+    color: white;
+}
+
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+/* Animation */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
