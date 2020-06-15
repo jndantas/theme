@@ -5,8 +5,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.8;
     font-size: 1em;
-    background: #f2f5f9;
-    color: #000839;
+
     overflow-x: hidden; }
 body:before {
     content: "";
@@ -45,11 +44,10 @@ a.text-primary:hover {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     font-family: "Montserrat", sans-serif; }
-
-body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
 }
 
 .btn-purple-moon {
@@ -926,4 +924,182 @@ hr {
     h1 {
         font-size: 24px;
     }
+}
+
+
+.our-products {
+    background: url(../img/video-area-bg.png) no-repeat center;
+    background-color: #ffffff;
+}
+
+
+.cards-list-solutions {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-soluctions {
+    margin: 30px auto;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-soluctions .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card-soluctions .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card-soluctions .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.card-soluctions:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+    color: white;
+}
+
+.title-black {
+    color: black;
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+
+
+
+.my-solutions {
+    width: 300px !important;
+    height: 600px !important;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.my-solutions img {
+    transition: all 0.15s linear;
+}
+
+.my-solutions .solution-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+
+.my-solutions .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.my-solutions .solution-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.my-solutions .solution-overview h3 {
+    font-weight: bold;
+}
+
+.my-solutions .solution-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.my-solutions:hover img {
+    filter: brightness(80%);
+}
+
+.my-solutions:hover .solution-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.my-solutions:hover .solution-position {
+    left: 40px;
+}
+
+.my-solutions:hover .solution-overview {
+    padding-bottom: 25px;
+}
+
+#step-to-step {
+    padding: 6.25rem 0rem;
+}
+
+#step-to-step .left-image {
+    align-self: center;
+}
+
+#step-to-step .right-text ul li {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+#step-to-step .right-text ul {
+    padding: 0;
+    margin: 0;
+}
+
+#step-to-step .right-text ul li {
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+#step-to-step  .right-text img {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+
+#step-to-step .right-text h4 {
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+    margin-top: 3px;
 }
