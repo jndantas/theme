@@ -132,6 +132,7 @@ $(function(){
 				owl2.trigger('prev.owl.carousel');
 			})
 		}
+
 		if ( $('.owl-3-slider').length > 0 ) {
 			var owl3 = $('.owl-3-slider').owlCarousel({
 				loop: true,
@@ -151,11 +152,8 @@ $(function(){
 					600:{
 						items:1
 					},
-					800: {
-						items:2
-					},
-					1000:{
-						items:2
+					720: {
+						items:1
 					},
 					1100:{
 						items:3
@@ -383,6 +381,31 @@ $(function(){
 			links.removeClass('unfocus');
 		})
 
+	var j$ = jQuery,
+		$nav = j$(".navbar-line"),
+		$slideLine = j$("#slide-line"),
+		$currentItem = j$(".current");
 
+	function openNav() { $("#mySidenav").css("right", "0"), $("#main").addClass("clicktoleave"), $(".closebtn").addClass("closeActive") }
+
+	function closeNav() { document.getElementById("mySidenav"), $("#main").removeClass("clicktoleave"), $("#mySidenav").css("right", "-90%"), $(".closebtn").removeClass("closeActive") }
+	jQuery(document).ready(function(a) {
+		function e(e) { this.element = e, this.mainNavigation = this.element.find(".main-nav"), this.mainNavigationItems = this.mainNavigation.find(".has-dropdown"), this.dropdownList = this.element.find(".dropdown-list"), this.dropdownWrappers = this.dropdownList.find(".dropdown"), this.dropdownItems = this.dropdownList.find(".content"), this.mq = this.checkMq(), this.bindEvents() }
+		j$(function() { $currentItem[0] && $slideLine.css({ width: $currentItem.width(), left: $currentItem.position().left }), j$($nav).find("li").hover(function() { $slideLine.css({ width: j$(this).width(), left: j$(this).position().left }) }, function() { $currentItem[0] ? $slideLine.css({ width: $currentItem.width(), left: $currentItem.position().left }) : $slideLine.width(0) }) }), e.prototype.checkMq = function() { return window.getComputedStyle(this.element.get(0), "::before").getPropertyValue("content").replace(/'/g, "").replace(/"/g, "").split(", ") }, e.prototype.bindEvents = function() {
+			var t = this;
+			this.mainNavigationItems.mouseenter(function(e) { t.showDropdown(a(this)) }).mouseleave(function() { setTimeout(function() { 0 == t.mainNavigation.find(".has-dropdown:hover").length && 0 == t.element.find(".dropdown-list:hover").length && t.hideDropdown() }, 50) }), this.dropdownList.mouseleave(function() { setTimeout(function() { 0 == t.mainNavigation.find(".has-dropdown:hover").length && 0 == t.element.find(".dropdown-list:hover").length && t.hideDropdown() }, 50) })
+		}, e.prototype.showDropdown = function(e) {
+			this.mq = this.checkMq();
+			var t = this,
+				a = this.dropdownList.find("#" + e.data("content")),
+				i = a.innerHeight(),
+				s = a.children(".content").innerWidth(),
+				o = e.offset().left + e.innerWidth() / 2 - s / 2;
+			this.updateDropdown(a, parseInt(i), s, parseInt(o)), this.element.find(".active").removeClass("active"), a.addClass("active").removeClass("move-left move-right").prevAll().addClass("move-left").end().nextAll().addClass("move-right"), e.addClass("active"), this.element.hasClass("is-dropdown-visible") || setTimeout(function() { t.element.addClass("is-dropdown-visible") }, 50)
+		}, e.prototype.updateDropdown = function(e, t, a, i) { this.dropdownList.css({ transform: "translateX(" + i + "px)", width: a + "px", height: t + "px" }) }, e.prototype.hideDropdown = function() { this.mq = this.checkMq(), this.element.removeClass("is-dropdown-visible").find(".active").removeClass("active").end() };
+		var t = [];
+		0 < a(".cd-morph-dropdown").length && a(".cd-morph-dropdown").each(function() { t.push(new e(a(this))) })
+	})
 
 })
+

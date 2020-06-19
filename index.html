@@ -19,34 +19,29 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light navbar-expand-md  justify-content-center fixed-top">
+<nav class="navbar navbar-light main-header navbar-expand-md cd-morph-dropdown justify-content-center fixed-top">
     <div class="container bg-light">
         <a href="/" class="navbar-brand mr-0 pl-3"><img src="img/logo140.png" alt=""></a>
-        <button class="navbar-toggler ml-1 mr-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <button class="navbar-toggler ml-1 mr-3" type="button" data-toggle="collapse" data-target="#mainMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-            
-            <ul class="navbar-nav mx-auto text-center">
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="mainMenu">
+
+            <ul class="navbar-nav mx-auto text-center  main-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#"> Home</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">Limpe seu Nome</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">2ª via de Boleto</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Para Você</a>
-                    <ul class="dropdown-menu fade-up">
-                        <li><a class="dropdown-item" href="#">Soluções em Pagamentos</a></li>
-                        <li><a class="dropdown-item" href="#">Análise de Crédito</a></li>
-                        <li><a class="dropdown-item" href="#">Recupere Dívidas </a></li>
-                        <li><a class="dropdown-item" href="#">Protesto Online</a></li>
-                        <li><a class="dropdown-item" href="#">Cobrança Inteligente</a></li>
-                        <li><a class="dropdown-item" href="#">Assinatura Digital</a></li>
-                    </ul>
+
+                <li class="nav-item has-dropdown" data-content="solutions">
+                    <a class="nav-link" href="#our-soluctions">Para Você</a>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trabalhe Conosco</a>
@@ -60,6 +55,77 @@
             </ul>
         </div>
 
+    </div>
+    <div class="morph-dropdown-wrapper">
+        <div class="dropdown-list">
+            <ul>
+                <li id="solutions" class="dropdown">
+                    <div class="content dropdown-solutions">
+                        <a href="gestao.html" class="dropdown-payments">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/payment-method.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Soluções em Pagamentos</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-analysis">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/economy.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Análise de Crédito</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-recovery">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/invoice.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Recupere Dívidas</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-protest">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/seo-and-web.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Protesto Online</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-charge">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/smart-contracts.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Cobrança Inteligente</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="dropdown-digital">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/flaticon/svg/pen.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Assinatura Digital</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div> <!-- dropdown-list -->
     </div>
 
 </nav>
@@ -105,7 +171,7 @@
 
 </section>
 
-<div class="untree_co-section">
+<div class="co-section">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-5 order-lg-2 js-custom-dots">
@@ -204,7 +270,7 @@
             </div> <!-- /.col-md-4 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
-</div> <!-- /.untree_co-section -->
+</div>
 
 <!--Início Tipos de usuários-->
 <div class="features-v3" id="clients">
@@ -240,7 +306,7 @@
     </div>
 </div>
 
-<section id="soluctions">
+<section id="our-soluctions">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="0">
@@ -256,8 +322,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
-
+                                    <a class="btn btn-dark-blue btn-rounded" href="gestao.html">Saiba mais</a>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +338,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
+                                    <a class="btn btn-dark-blue btn-rounded" href="#">Saiba mais</a>
 
                                 </div>
                             </div>
@@ -288,7 +353,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
+                                    <a class="btn btn-dark-blue btn-rounded" href="#">Saiba mais</a>
 
                                 </div>
                             </div>
@@ -303,7 +368,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
+                                    <a class="btn btn-dark-blue btn-rounded" href="#">Saiba mais</a>
 
                                 </div>
                             </div>
@@ -318,7 +383,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
+                                    <a class="btn btn-dark-blue btn-rounded" href="#">Saiba mais</a>
 
                                 </div>
                             </div>
@@ -333,7 +398,7 @@
                         <div class="solution-overview">
                             <div class="text-center">
                                 <div class="col-xs-4">
-                                    <a class="btn btn-light button-link" href="#">Saiba mais</a>
+                                    <a class="btn btn-dark-blue btn-rounded" href="#">Saiba mais</a>
 
                                 </div>
                             </div>
@@ -499,90 +564,142 @@
 </section>
  -->
 
-<div class="bg-light service-34 wrap-service34-box">
+<section class="posts wrap-service34-box p-0">
     <!-- Row  -->
     <div class="row ">
-        <div class="col-lg-6 left-image">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/features/feature34/img1.png" class="img-fluid" alt="wrappixel" />
+        <div class="col-lg-5 left-image p-0">
+            <img src="img/posts.png" class="img-fluid"  />
         </div>
-            <div class="col-lg-6 ml-auto">
+            <div class="col-lg-7 ml-auto p-0">
                 <div class="news-section">
 
-                    <div class="title-wrap">
+                    <div class="news" data-aos="fade" data-aos-delay="0">
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 text-center">
-                                    <span class="section-subtitle">Ideias &amp; Publicações</span>
-                                    <h2 class="section-title">Fique Atualizado</h2>
-                                </div>
+                            <div class="text-center text-white pb-2">
+                                <span>Ideias &amp; Publicações</span>
+                                <h2>Fique Atualizado</h2>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="news-entries">
-                        <div class="container">
-                            <div class="row mb-5">
-                                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="">
-                                    <div class="news-entry">
-                                        <div class="date">
-                                            <span>28 de Abril, 2020</span>
-                                        </div>
-                                        <h2><a href="#">Vale a pena protestar um cliente inadimplente?</a></h2>
+                            <div class="owl-3-slider owl-carousel">
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Carlos Eduardo</div>
+                                        <h3><a href="#">Vale a pena protestar um cliente inadimplente?</a></h3>
                                         <p>Para o credor, existem várias vantagens em protestar uma dívida.</p>
-                                        <p class="mb-0">
-                                            <a href="#" class="readmore d-flex align-items-center mb-0"><span class="mr-2">Saiba mais</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="news-entry">
-                                        <div class="date">
-                                            <span>28 de Abril, 2020</span>
-                                        </div>
-                                        <h2><a href="#">O que é análise de crédito?</a></h2>
-                                        <p>A análise de crédito tem como objetivo estudar a possibilidade de conceder crédito a uma pessoa física ou jurídica,</p>
-                                        <p class="mb-0">
-                                            <a href="#" class="readmore d-flex align-items-center mb-0"><span class="mr-2">Saiba mais</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Diego Cost</div>
+                                        <h3><a href="#">O que é análise de crédito?</a></h3>
+                                        <p>A análise de crédito tem como objetivo estudar a possibilidade de conceder crédito a uma pessoa física ou jurídica.</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="news-entry">
-                                        <div class="date">
-                                            <span>28 de Abril, 2020</span>
-                                        </div>
-                                        <h2><a href="#">Qual a importância da recuperação de crédito?</a></h2>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Michelle Allison</div>
+                                        <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
                                         <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
-                                        <p class="mb-0">
-                                            <a href="#" class="readmore d-flex align-items-center mb-0"><span class="mr-2">Saiba mais</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="news-entry">
-                                        <div class="date">
-                                            <span>28 de Abril, 2020</span>
-                                        </div>
-                                        <h2><a href="#">Como funciona a Gestão de Assinaturas?</a></h2>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Tony Nascimento</div>
+                                        <h3><a href="#">Como funciona a Gestão de Assinaturas?</a></h3>
                                         <p>A Gestão de Assinaturas entrega dados que ajuda o planejamento da empresa.</p>
-                                        <p class="mb-0">
-                                            <a href="#" class="readmore d-flex align-items-center mb-0"><span class="mr-2">Saiba mais</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <p class="mb-0"><a href="#" class="btn btn-primary btn-primary-hover-outline">Nosso Blog</a></p>
+
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Carlos Eduardo</div>
+                                        <h3><a href="#">Como funciona a Gestão de Assinaturas?</a></h3>
+                                        <p>A Gestão de Assinaturas entrega dados que ajuda o planejamento da empresa.</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
                                 </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Diego Cost</div>
+                                        <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Michelle Allison</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Tony Nascimento</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Carlos Eduardo</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Diego Cost</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Michelle Allison</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Tony Nascimento</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="custom-media-v2">
+                                        <div class="author">por Carlos Eduardo</div>
+                                                                                <h3><a href="#">Qual a importância da recuperação de crédito?</a></h3>
+                                        <p>A recuperação das dívidas é uma iniciativa que busca junto ao cliente a devolução</p>
+                                        <p><a href="#" class="btn btn-orange-moon btn-rounded">Saiba mais</a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 text-center">
+                                <p class="mb-0"><a href="#" class="btn btn-lg btn-pink-moon btn-rounded">Nosso Blog</a></p>
                             </div>
                         </div>
                     </div>
 
-
-            </div>
+                </div>
         </div>
         <!-- Column -->
     </div>
-</div>
-
-
+</section>
 
 <section class="form-signup-v1" id="contact-us">
     <div class="container">
@@ -737,7 +854,7 @@
             <div class="col-md-6 text-center">
                 <h6 class="font-weight-normal">Seja nosso parceiro comercial Me Pague! e obtenha lucros recorrentes.</h6>
 
-                <button class="btn btn-danger btn-md mt-3">Comece Agora</button>
+                <button class="btn btn-danger btn-md mt-3 btn-rounded">Comece Agora</button>
             </div>
         </div>
         <!-- row  -->
@@ -827,5 +944,7 @@
 
 
 <script src="js/custom.js"></script>
+
+
 </body>
 </html>
